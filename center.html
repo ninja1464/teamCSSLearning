@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .make-text-centre {
+        text-align: center;
+        border: 2px solid red;
+
+      }
+      .make-tag-center {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         border: 2px solid red;
+
+      }
+
+      .make-multitag-center{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+      }
+
+      .make-multitag-center > .giving-margin{
+        margin: 100px;
+        border: 2px solid red;
+      }
+
+      .make-textbox-center{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+      }
+     
+      .make-textbox-center > .giving-margin{
+        margin-left: 20px;
+        margin-right: 20px;
+        /* here distance btw tags will be 20+20 */
+      }
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--make-text-center-->
+    <div class="make-text-centre">sachin</div>
+
+    <!--make-tag-center-->
+    <div class="make-tag-center">
+      <h1>SACHIN</h1>
+    </div>
+
+    <!--make-multitag-center-->
+    <div class="make-multitag-center">
+      <h1 class="giving-margin">SACHIN </h1>
+      <h1 class="giving-margin">bunty</h1>
+    </div>
+
+    <div class="make-textbox-center">
+        <label class="giving-margin" for="input1">name</label>
+        <input class="giving-margin" type="text" name="name"  id="input1">
+    </div>
+  </body>
+</html>
