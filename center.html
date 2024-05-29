@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+
+      /* <!--make-text-center--> */
       .make-text-centre {
         text-align: center;
         border: 2px solid red;
 
       }
+
+      /* <!--make-tag-center--> */
       .make-tag-center {
         text-align: center;
         display: flex;
@@ -18,6 +22,7 @@
 
       }
 
+      /* <!--make-multitag-center--> */
       .make-multitag-center{
         text-align: center;
         display: flex;
@@ -25,12 +30,12 @@
         align-items: center;
         border: 2px solid red;
       }
-
       .make-multitag-center > .giving-margin{
         margin: 100px;
         border: 2px solid red;
       }
 
+      /* <!--make-text-box-center--> */
       .make-textbox-center{
         text-align: center;
         display: flex;
@@ -38,12 +43,36 @@
         align-items: center;
         border: 2px solid red;
       }
-     
       .make-textbox-center > .giving-margin{
         margin-left: 20px;
         margin-right: 20px;
         /* here distance btw tags will be 20+20 */
       }
+
+      /* <!-- container-item-auto-spacing--> */
+      .auto-centring-of {
+        display: flex;
+        justify-content: space-between; /* This will distribute space between the items */
+        align-items: center; /* This will vertically center the items */
+        width: 100%; /* Ensure the container takes the full width of its parent */
+        border: 2px solid red;
+      }
+      .container-item {
+        margin: 0 10px; /* Adjust the margin as needed */
+        flex: 1; /* Allow items to grow and take equal space */
+      }
+
+      /* <!-- container-item-auto-spacing-horizontally--> */
+      .container-item-auto-spacing-horizontally{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        border: 2px solid red;
+      }
+      .container-item-auto-spacing-horizontally > .radio-item{
+        border: 2px solid red;
+      }
+
 
     </style>
     <title>Document</title>
@@ -63,9 +92,37 @@
       <h1 class="giving-margin">bunty</h1>
     </div>
 
+    <!--make-text-box-center-->
     <div class="make-textbox-center">
         <label class="giving-margin" for="input1">name</label>
         <input class="giving-margin" type="text" name="name"  id="input1">
     </div>
+
+    <!--auto-centring-of container-items-->
+    <div class="auto-centring-of container-items">
+        <label class="container-item" for="input1">name</label>
+        <input class="container-item" type="text" name="name"  id="input1">
+    </div>
+
+    <!-- container-item-auto-spacing-horizontally-->
+    <div class="container-item-auto-spacing-horizontally">
+      <div class="radio-item">
+        <input type="radio" id="option1" name="options" value="1">
+        <label for="option1">Option 1</label>
+      </div>
+      <div class="radio-item">
+        <input type="radio" id="option2" name="options" value="2">
+        <label for="option2">Option 2</label>
+      </div>
+      <div class="radio-item">
+        <input type="radio" id="option3" name="options" value="3">
+        <label for="option3">Option3</label>
+      </div>
+      <div class="radio-item">
+          <input type="radio" id="option4" name="options" value="4">
+          <label for="option4">Option 4</label>
+      </div>
+    </div>
+    
   </body>
 </html>
